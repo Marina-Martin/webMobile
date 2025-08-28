@@ -1,5 +1,8 @@
 # Projeto Busca Lar
 
+## Bruno Roveri - 10401752
+## Marina Martin - 10403028
+
 ## Processo de Ideação - BuscaLar
 
 ### 1. Identificação do Problema
@@ -15,5 +18,9 @@ Criar uma plataforma digital, o **BuscaLar**, que permita que pessoas que encont
 
 ### 4. Caráter Extensionista
 O **BuscaLar** é uma plataforma extensionista que vai além de facilitar a adoção de animais, com um forte compromisso social de promover a conscientização sobre o abandono e os benefícios da adoção responsável. O projeto busca transformar a realidade dos animais em situação de rua, oferecendo uma rede de apoio que envolva a comunidade e incentive a adoção como uma alternativa positiva e ética.
+
+### 5. Wireframe
+<img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/65059474-8b2e-4af5-ab82-dfc81fe83a43" />
+
 
 
