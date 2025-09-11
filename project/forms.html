@@ -1,100 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuscaLar - Cadastrar Pet</title>
-    <link rel="stylesheet" href="formsStyle.css">
+  <meta charset="UTF-8">
+  <title>Busca Lar - Cadastrar Pet</title>
+  <link rel="stylesheet" href="formsStyle.css">
 </head>
 <body>
 
-    <header>
-        <h1><a href="forms.html">BuscaLar</a></h1> 
-        <nav>
-            <ul>
-                <li><a href="#">Buscar Pet</a></li>
-                <li><a href="cadastro-pet.html">Adicionar Pet para Adoção</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1><a href="home.html">Busca Lar</a></h1>
+    <nav>
+      <ul>
+        <button onclick="mostrarPopup()">Busca Pet</button>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="form-container">
-            <h2>Cadastre seu Pet para Adoção</h2>
-            <p class="instrucoes">Preencha as informações abaixo para ajudar a encontrar um novo lar para seu amigo!</p>
-            
-            <form action="#" method="POST" enctype="multipart/form-data">
-                
-                <fieldset>
-                    <legend>Informações do Pet</legend>
-                    <p>
-                        <label for="nome-pet">Nome do Pet:</label>
-                        <input type="text" id="nome-pet" name="nome-pet" placeholder="Ex: Amigo, Fofinha" required>
-                    </p>
-                    <p>
-                        <label for="animal">Espécie:</label>
-                        <select id="animal" name="animal" required>
-                            <option value="">Selecione a espécie</option>
-                            <option value="cachorro">Cachorro</option>
-                            <option value="gato">Gato</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="porte">Porte do Pet:</label>
-                        <select id="porte" name="porte" required>
-                            <option value="">Selecione o porte</option>
-                            <option value="pequeno">Pequeno</option>
-                            <option value="medio">Médio</option>
-                            <option value="grande">Grande</option>
-                        </select>
-                    </p>
-                    <p class="full-width"> 
-                        <label for="descricao">Descrição (História, Características e Temperamento):</label>
-                        <textarea id="descricao" name="descricao" rows="8" placeholder="Conte um pouco sobre a personalidade do pet, sua história, se ele se dá bem com crianças ou outros animais, etc."></textarea>
-                    </p>
-                    <p class="full-width">
-                        <label for="foto-pet">Foto do Pet:</label>
-                        <input type="file" id="foto-pet" name="foto-pet" accept="image/*" required>
-                        <small>Envie uma foto clara e de boa qualidade do seu pet. Isso aumenta as chances de adoção!</small>
-                    </p>
-                </fieldset>
+  <main>
+    <h2>Cadastre seu Pet</h2>
+    <form>
+      <fieldset>
+        <legend>Informações do Pet</legend>
+        <p>
+          <label for="nome-pet">Nome:</label>
+          <input type="text" id="nome-pet" name="nome-pet">
+        </p>
+        <p>
+          <label for="animal">Espécie:</label>
+          <select id="animal" name="animal">
+            <option>Cachorro</option>
+            <option>Gato</option>
+            <option>Outro</option>
+          </select>
+        </p>
+        <p>
+          <label for="descricao">Descrição:</label>
+          <textarea id="descricao" name="descricao"></textarea>
+        </p>
+        <p>
+          <label for="foto-pet">Foto:</label>
+          <input type="file" id="foto-pet" name="foto-pet">
+        </p>
+      </fieldset>
 
-                <fieldset>
-                    <legend>Localização e Contato</legend>
-                    <p>
-                        <label for="cidade">Cidade:</label>
-                        <input type="text" id="cidade" name="cidade" placeholder="Ex: São Paulo" required>
-                    </p>
-                    <p>
-                        <label for="estado">Estado:</label>
-                        <input type="text" id="estado" name="estado" placeholder="Ex: SP" required>
-                    </p>
-                    <p>
-                        <label for="nome-usuario">Seu Nome:</label>
-                        <input type="text" id="nome-usuario" name="nome-usuario" placeholder="Nome Completo" required>
-                    </p>
-                    <p>
-                        <label for="email-usuario">Seu E-mail:</label>
-                        <input type="email" id="email-usuario" name="email-usuario" placeholder="seu.email@exemplo.com" required>
-                    </p>
-                    <p>
-                        <label for="telefone-usuario">Telefone (opcional):</label>
-                        <input type="tel" id="telefone-usuario" name="telefone-usuario" placeholder="(XX) XXXX-XXXX">
-                    </p>
-                </fieldset>
-                
-                <p class="botoes-form">
-                    <button type="submit">Enviar para Adoção</button>
-                    <button type="reset">Limpar Formulário</button>
-                </p>
-            </form>
-        </section>
-    </main>
+      <fieldset>
+        <legend>Contato</legend>
+        <p>
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade">
+        </p>
+        <p>
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado">
+        </p>
+        <p>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email">
+        </p>
+      </fieldset>
 
-    <footer>
-        <p>&copy; 2023 BuscaLar. Todos os direitos reservados.</p>
-    </footer>
+      <p class="botoes-form">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </p>
+    </form>
+  </main>
 
+  <footer>
+    <p>© 2025 Busca Lar - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function mostrarPopup() {
+      alert("Em construção");
+    }
+  </script>
 </body>
 </html>
