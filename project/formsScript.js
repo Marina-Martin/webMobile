@@ -9,7 +9,6 @@ form.addEventListener("submit", function (event) {
   const nome = document.getElementById("nome-pet").value.trim();
   const email = document.getElementById("email").value.trim();
 
-  // 2. Realize a validação dos campos
   if (!nome || !email) {
     alert("Por favor, preencha o nome do pet e o e-mail.");
     return; 
