@@ -7,12 +7,15 @@ body {
   text-align: center;
 }
 
-header, footer {
+header, footer, form, fieldset {
   border: 2px solid black;
+}
+
+header, footer {
   padding: 10px;
 }
 
-header a {
+a {
   color: black;
   text-decoration: none;
 }
@@ -23,21 +26,19 @@ nav ul {
   margin: 10px 0;
 }
 
-nav ul li {
+/* nav ul li {
   display: inline;
   margin: 0 10px;
-}
+} */
 
 form {
   max-width: 600px;
   margin: 20px auto;
   text-align: left;
-  border: 2px solid black;
   padding: 20px;
 }
 
 fieldset {
-  border: 2px solid black;
   margin-bottom: 20px;
   padding: 10px;
 }
@@ -51,7 +52,7 @@ label {
   margin-bottom: 5px;
 }
 
-input, select, textarea {
+.input-control {
   width: 100%;
   border: 1px solid black;
   padding: 5px;
@@ -62,7 +63,7 @@ textarea {
   resize: vertical;
 }
 
-button {
+.btn {
   border: 2px solid black;
   background: white;
   padding: 10px 20px;

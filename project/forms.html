@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Busca Lar - Cadastrar Pet</title>
   <link rel="stylesheet" href="formsStyle.css">
+  <script src="formsScript.js" defer></script>
 </head>
 <body>
 
@@ -11,7 +12,7 @@
     <h1><a href="home.html">Busca Lar</a></h1>
     <nav>
       <ul>
-        <button onclick="mostrarPopup()">Busca Pet</button>
+        <button class="bnt" onclick="mostrarPopup()">Busca Pet</button>
       </ul>
     </nav>
   </header>
@@ -23,11 +24,11 @@
         <legend>Informações do Pet</legend>
         <p>
           <label for="nome-pet">Nome:</label>
-          <input type="text" id="nome-pet" name="nome-pet">
+          <input class="inputs" type="text" id="nome-pet" name="nome-pet">
         </p>
         <p>
           <label for="animal">Espécie:</label>
-          <select id="animal" name="animal">
+          <select class="inputs" id="animal" name="animal">
             <option>Cachorro</option>
             <option>Gato</option>
             <option>Outro</option>
@@ -35,11 +36,11 @@
         </p>
         <p>
           <label for="descricao">Descrição:</label>
-          <textarea id="descricao" name="descricao"></textarea>
+          <textarea class="inputs" id="descricao" name="descricao"></textarea>
         </p>
         <p>
           <label for="foto-pet">Foto:</label>
-          <input type="file" id="foto-pet" name="foto-pet">
+          <input class="inputs" type="file" id="foto-pet" name="foto-pet">
         </p>
       </fieldset>
 
@@ -47,21 +48,21 @@
         <legend>Contato</legend>
         <p>
           <label for="cidade">Cidade:</label>
-          <input type="text" id="cidade" name="cidade">
+          <input class="inputs" type="text" id="cidade" name="cidade">
         </p>
         <p>
           <label for="estado">Estado:</label>
-          <input type="text" id="estado" name="estado">
+          <input class="inputs" type="text" id="estado" name="estado">
         </p>
         <p>
           <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email">
+          <input class="inputs" type="email" id="email" name="email">
         </p>
       </fieldset>
 
       <p class="botoes-form">
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpar</button>
+        <button class="btn" type="submit">Enviar</button>
+        <button class="btn" type="reset">Limpar</button>
       </p>
     </form>
   </main>
@@ -69,11 +70,5 @@
   <footer>
     <p>© 2025 Busca Lar - Todos os direitos reservados</p>
   </footer>
-
-  <script>
-    function mostrarPopup() {
-      alert("Em construção");
-    }
-  </script>
 </body>
 </html>
