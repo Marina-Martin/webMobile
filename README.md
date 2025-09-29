@@ -25,13 +25,13 @@ O **BuscaLar** é uma plataforma extensionista que vai além de facilitar a ado�
 ### 6. Estrutura do Projeto
 README.md: Contém a documentação do projeto, incluindo a identificação do problema, o objetivo, o público-alvo e o caráter extensionista
  project/: Pasta principal que abriga os arquivos da aplicação
-Cachorro.jpg e Gato.jpg: Imagens usadas nas galerias da página inicial
-forms.html: A página de formulário de cadastro de pets
-formsScript.js: O arquivo JavaScript que controla a validação e as interações do formulário
-formsStyle.css: O arquivo de design para a página de cadastro
-home.html: A página inicial do site
-homeScript.js: O arquivo JavaScript que cria as galerias de imagens e gerencia o pop-up
-homeStyle.css: O arquivo de design para a página inicial
+ Cachorro.jpg e Gato.jpg: Imagens usadas nas galerias da página inicial
+ forms.html: A página de formulário de cadastro de pets
+ formsScript.js: O arquivo JavaScript que controla a validação e as interações do formulário
+ formsStyle.css: O arquivo de design para a página de cadastro
+ home.html: A página inicial do site
+ homeScript.js: O arquivo JavaScript que cria as galerias de imagens e gerencia o pop-up
+ homeStyle.css: O arquivo de design para a página inicial
 
 ### 7. Como os Códigos Foram Construídos
 HTML: A construção das páginas HTML partiu da definição de uma estrutura básica para o corpo do site A página inicial estabeleceu a navegação entre a busca por pets e o formulário de cadastro, definindo alvos (id="cachorros", id="gatos") para que o JavaScript pudesse injetar conteúdo dinamicamente e criando links diretos para a página de formulário. No formulário, elementos com identificadores únicos (id="nome-pet", id="email") foram criados para que o JavaScript pudesse acessá-los e validar os dados de forma específica.
