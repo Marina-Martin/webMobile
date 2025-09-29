@@ -24,7 +24,7 @@ O **BuscaLar** é uma plataforma extensionista que vai além de facilitar a ado�
 
 ### 6. Estrutura do Projeto
 README.md: Contém a documentação do projeto, incluindo a identificação do problema, o objetivo, o público-alvo e o caráter extensionista
-project/: Pasta principal que abriga os arquivos da aplicação
+ project/: Pasta principal que abriga os arquivos da aplicação
 Cachorro.jpg e Gato.jpg: Imagens usadas nas galerias da página inicial
 forms.html: A página de formulário de cadastro de pets
 formsScript.js: O arquivo JavaScript que controla a validação e as interações do formulário
@@ -34,11 +34,11 @@ homeScript.js: O arquivo JavaScript que cria as galerias de imagens e gerencia o
 homeStyle.css: O arquivo de design para a página inicial
 
 ### 7. Como os Códigos Foram Construídos
-•HTML: A construção das páginas HTML partiu da definição de uma estrutura básica para o corpo do site A página inicial estabeleceu a navegação entre a busca por pets e o formulário de cadastro, definindo alvos (id="cachorros", id="gatos") para que o JavaScript pudesse injetar conteúdo dinamicamente e criando links diretos para a página de formulário. No formulário, elementos com identificadores únicos (id="nome-pet", id="email") foram criados para que o JavaScript pudesse acessá-los e validar os dados de forma específica.
+HTML: A construção das páginas HTML partiu da definição de uma estrutura básica para o corpo do site A página inicial estabeleceu a navegação entre a busca por pets e o formulário de cadastro, definindo alvos (id="cachorros", id="gatos") para que o JavaScript pudesse injetar conteúdo dinamicamente e criando links diretos para a página de formulário. No formulário, elementos com identificadores únicos (id="nome-pet", id="email") foram criados para que o JavaScript pudesse acessá-los e validar os dados de forma específica.
 
-•CSS: A estilização foi construída com um enfoque minimalista, utilizando cores de alto contraste como preto e branco e definindo uma fonte padrão. As bordas de 2px foram aplicadas para criar um contorno em diversos elementos, como botões, cabeçalho e rodapé, mantendo uma identidade visual mínima. Efeitos de interação foram adicionados para dar feedback visual ao usuário, indicando que os elementos são clicáveis.
+CSS: A estilização foi construída com um enfoque minimalista, utilizando cores de alto contraste como preto e branco e definindo uma fonte padrão. As bordas de 2px foram aplicadas para criar um contorno em diversos elementos, como botões, cabeçalho e rodapé, mantendo uma identidade visual mínima. Efeitos de interação foram adicionados para dar feedback visual ao usuário, indicando que os elementos são clicáveis.
 
-•JavaScript: A lógica foi construída para automatizar tarefas e adicionar interatividade. Na página inicial, a função criarGaleria foi definida para receber um alvo (o id da seção), o caminho da imagem e a quantidade, e então usar um loop para criar múltiplos elementos de imagem e anexá-los ao HTML. Para o formulário, o código se conecta ao submit do formulário,
+JavaScript: A lógica foi construída para automatizar tarefas e adicionar interatividade. Na página inicial, a função criarGaleria foi definida para receber um alvo (o id da seção), o caminho da imagem e a quantidade, e então usar um loop para criar múltiplos elementos de imagem e anexá-los ao HTML. Para o formulário, o código se conecta ao submit do formulário,
 impede o envio padrão, e valida se campos essenciais estão preenchidos antes de processar os dados, garantindo que o usuário forneça as informações necessárias.
 
 ### 8. Como Replicar no Próprio Site
