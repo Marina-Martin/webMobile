@@ -86,11 +86,9 @@ O JavaScript dá vida e dinamismo ao projeto. Foram implementadas três lógicas
 ### Monte o HTML
 - Crie seções com id para permitir que o JS injete imagens.
 - Use form com campos input e id únicos.
-
 ### Adicione CSS
 - Estilize as imagens com object-fit: cover.
 - Use hover em botões para dar retorno ao usuário.
-
 ### Escreva o JS
 - Use document.getElementById() para localizar elementos.
 - Crie funções reutilizáveis (criarGaleria para imagens, validação para formulário).
