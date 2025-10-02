@@ -50,7 +50,8 @@ O HTML é a estrutura base do site. Ele define o conteúdo e a semântica.
 - O botão de envio dispara o event listener no formsScript.js.
 
 ### 5.2 CSS
-O CSS foi pensado para ser minimalista, mas garantindo identidade visual.
+O CSS foi pensado para ser minimalista.
+
 ### homeStyle.css
 - Define fonte padrão e centraliza elementos.
 - As imagens da galeria recebem largura e altura fixas (150px).
@@ -72,8 +73,7 @@ O JavaScript dá vida e dinamismo ao projeto. Foram implementadas três lógicas
 - Um loop for é usado para criar várias imagens sem precisar escrever img manualmente no HTML.
 
 ### Pop-up informativo (homeScript.js e formsScript.js)
-- A função mostrarPopup usa alert para informar que a funcionalidade ainda está em desenvolvimento.
-- É uma interação simples, mas mostra como JS consegue interagir diretamente com o usuário.
+- A função mostrarPopup usa alert para informar que a funcionalidade ainda está em desenvolvimento, ela será feita na fase borboleta do projeto.
 
 ### Validação do formulário (formsScript.js)
 - O formulário é “interceptado” com addEventListener("submit", ...).
@@ -97,10 +97,8 @@ Essa modularização permite que cada parte seja reaproveitada em outros projeto
 
 ### 7. Conclusão – Aprendizados Adquiridos
 Durante o desenvolvimento do Busca Lar, tivemos uma série de aprendizados importantes tanto no aspecto técnico quanto no extensionista:
-- HTML5: aprendemos a importância de estruturar a página de forma semântica, usando elementos como section, header e footer para organizar o conteúdo de forma clara. Também percebemos como a definição de ids é fundamental para integrar o HTML com o JavaScript.
-- CSS3: compreendemos como o design influencia diretamente a experiência do usuário. Pequenos ajustes, como hover em botões ou object-fit: cover em imagens, fazem diferença para transmitir profissionalismo e facilitar a navegação.
-- JavaScript: Vimos como manipular o DOM com createElement e appendChild, como interceptar eventos de formulário com addEventListener, e como validar dados antes de processá-los. Isso mostrou na prática como o JavaScript torna a aplicação dinâmica e interativa.
+- HTML5: aprendemos a importância de estruturar a página de forma semântica, usando elementos como section, header e footer para organizar o conteúdo de forma clara. Também percebemos como a definição de ids é fundamental para integrar o HTML com o JavaScript. Além disso evitamos a repetição de código atravez do uso de ids.
+- CSS3: Trabalhamos em um design mais simples, garantindo que a aplicação seria responsiva.
+- JavaScript: Vimos como manipular o DOM com createElement e appendChild, como interceptar eventos de formulário com addEventListener, e como validar dados antes de processá-los.
 - Caráter extensionista: Aprendemos a enxergar a programação como um meio de resolver problemas reais da comunidade — neste caso, conectando animais em situação de vulnerabilidade a pessoas dispostas a adotar.
-
-Em resumo: aprendemos a transformar um problema real em uma solução digital mínima, unindo conceitos de HTML, CSS e JS de forma prática e didática, com foco em impacto social. Esse processo nos mostrou que, mesmo com um site simples, é possível gerar valor para a comunidade e criar a base de um projeto maior.
 
